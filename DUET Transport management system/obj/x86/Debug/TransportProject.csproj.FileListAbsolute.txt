@@ -1,0 +1,21 @@
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Complain_Form.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Personal_Car_Use_Form.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Requisition_Form.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Teacher_Form.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Properties.Resources.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\TransportProject.csproj.GenerateResource.Cache
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET Transport management system.exe
+I:\DUET Transport management system\DUET Transport management system\bin\Debug\DUET Transport management system.exe.config
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\TransportProject.csprojResolveAssemblyReference.cache
+I:\DUET Transport management system\DUET Transport management system\bin\Debug\DTMS.mdf
+I:\DUET Transport management system\DUET Transport management system\bin\Debug\DTMS_log.ldf
+I:\DUET Transport management system\DUET Transport management system\bin\Debug\DUET Transport management system.exe
+I:\DUET Transport management system\DUET Transport management system\bin\Debug\DUET Transport management system.pdb
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET Transport management system.pdb
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.ShowUser.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Login.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.ViewTeacherForm.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.ViewTeacher.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.Transport_Form.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.welcomeForm.resources
+I:\DUET Transport management system\DUET Transport management system\obj\x86\Debug\DUET_Transport_management_system.ViewTransport.resources

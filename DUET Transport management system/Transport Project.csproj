@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA0FD29D-F44E-4DC1-8E82-36C7C94BFFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DUET_Transport_management_system</RootNamespace>
+    <AssemblyName>DUET Transport management system</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.cs" />
+    <Compile Include="DTMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEmployeeForm.Designer.cs">
+      <DependentUpon>EditEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTransportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTransportForm.Designer.cs">
+      <DependentUpon>EditTransportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRequisitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRequisitionForm.Designer.cs">
+      <DependentUpon>EditRequisitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPersonalCarUseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPersonalCarUseForm.Designer.cs">
+      <DependentUpon>EditPersonalCarUseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPurchaseEquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPurchaseEquipmentForm.Designer.cs">
+      <DependentUpon>EditPurchaseEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUsagesEquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUsagesEquipmentForm.Designer.cs">
+      <DependentUpon>EditUsagesEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPurchasesEquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPurchasesEquipmentForm.Designer.cs">
+      <DependentUpon>ViewPurchasesEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStorageEquipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStorageEquipmentForm.Designer.cs">
+      <DependentUpon>ViewStorageEquipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUsageEuipmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUsageEuipmentForm.Designer.cs">
+      <DependentUpon>ViewUsageEuipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTeacherForm.Designer.cs">
+      <DependentUpon>EditTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usage_Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usage_Equipment.Designer.cs">
+      <DependentUpon>Usage_Equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_equipment.Designer.cs">
+      <DependentUpon>Purchase_equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeeForm.Designer.cs">
+      <DependentUpon>ViewEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewpersonalcaruse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewpersonalcaruse.Designer.cs">
+      <DependentUpon>viewpersonalcaruse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewrequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewrequisition.Designer.cs">
+      <DependentUpon>viewrequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransportEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransportEmployee.Designer.cs">
+      <DependentUpon>TransportEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTransport.Designer.cs">
+      <DependentUpon>ViewTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcomeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomeform.Designer.cs">
+      <DependentUpon>welcomeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTeacher.Designer.cs">
+      <DependentUpon>ViewTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complain_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complain_Form.Designer.cs">
+      <DependentUpon>Complain_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal_Car_Use_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal_Car_Use_Form.Designer.cs">
+      <DependentUpon>Personal_Car_Use_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Requistion_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requistion_Form.Designer.cs">
+      <DependentUpon>Requistion_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowUser.Designer.cs">
+      <DependentUpon>ShowUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Form.Designer.cs">
+      <DependentUpon>Teacher_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport_Form.Designer.cs">
+      <DependentUpon>Transport_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditEmployeeForm.resx">
+      <DependentUpon>EditEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTransportForm.resx">
+      <DependentUpon>EditTransportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRequisitionForm.resx">
+      <DependentUpon>EditRequisitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPersonalCarUseForm.resx">
+      <DependentUpon>EditPersonalCarUseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPurchaseEquipmentForm.resx">
+      <DependentUpon>EditPurchaseEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUsagesEquipmentForm.resx">
+      <DependentUpon>EditUsagesEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPurchasesEquipmentForm.resx">
+      <DependentUpon>ViewPurchasesEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStorageEquipmentForm.resx">
+      <DependentUpon>ViewStorageEquipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUsageEuipmentForm.resx">
+      <DependentUpon>ViewUsageEuipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTeacherForm.resx">
+      <DependentUpon>EditTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usage_Equipment.resx">
+      <DependentUpon>Usage_Equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_equipment.resx">
+      <DependentUpon>Purchase_equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeeForm.resx">
+      <DependentUpon>ViewEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewpersonalcaruse.resx">
+      <DependentUpon>viewpersonalcaruse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransportEmployee.resx">
+      <DependentUpon>TransportEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewrequisition.resx">
+      <DependentUpon>viewrequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTransport.resx">
+      <DependentUpon>ViewTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomeform.resx">
+      <DependentUpon>welcomeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTeacher.resx">
+      <DependentUpon>ViewTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complain_Form.resx">
+      <DependentUpon>Complain_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal_Car_Use_Form.resx">
+      <DependentUpon>Personal_Car_Use_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requistion_Form.resx">
+      <DependentUpon>Requistion_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowUser.resx">
+      <DependentUpon>ShowUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Form.resx">
+      <DependentUpon>Teacher_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transport_Form.resx">
+      <DependentUpon>Transport_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="DTMSDataSet.xsc">
+      <DependentUpon>DTMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DTMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DTMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTMSDataSet.xss">
+      <DependentUpon>DTMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DTMS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DTMS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DTMS.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\DSC_0219.JPG" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\DSC_0214.JPG" />
+    <None Include="Resources\DSC_0213.JPG" />
+    <None Include="Resources\HELAL.jpg" />
+    <None Include="Resources\DUET Transport management system.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
